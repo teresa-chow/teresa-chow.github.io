@@ -1,0 +1,80 @@
+/*@font-face {
+  font-family:"Inknut Antiqua", serif;
+  src: url(<link href='https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap' type='text/css'>);
+}*/
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Inknut Antiqua", serif;
+  margin: 5%;
+}
+
+footer {
+  font-weight: 300;
+  font-size: 0.6em;
+  color: #333;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 0.8em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+p {
+  font-weight: 300;
+  color: #333;
+  line-height: 1.2;
+  margin-bottom: 1.5em;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.categories {
+  text-align: center;
+}
+
+.circle {
+  height: 80px;
+  width: 120px;
+  border-style: solid;
+  border-width: 2.5px;
+  border-color: #000000;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.circle_major {
+  height: 350px;
+  width: 600px;
+  border-style: dotted;
+  border-width: 2.5px;
+  border-color: #000000;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  padding-top: 250px;
+}
+
+/* ------------------------ MOBILE ------------------------ */
+@media only screen and (max-width: 767px) {
+  .mobile {display: block;}
+  .desktop {display: none;}
+/*TODO*/
+}
+
+/* ------------------------ DESKTOP ------------------------ */
+@media only screen and (min-width: 768px) {
+  .desktop {display: block;}
+  .mobile {display: none;}
+/*TODO: formatting options*/
+}
