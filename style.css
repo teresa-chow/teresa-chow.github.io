@@ -113,6 +113,7 @@ header nav {
 }*/
 
 .grid-item {
+  margin: 5px;
   height: fit-content;
   border-style: solid;
   border-width: 1px;
@@ -256,15 +257,10 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   }
 
   main {
-    padding-top: 35px;
-  }
-
-  .grid-container {
-    margin-top: 5.5%;
+    padding-top: 60px;
   }
 
   .grid-item {
-    margin: 1%;
     width: 96%;
   }
 }
@@ -290,16 +286,11 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   }
 
   main {
-    padding-top: 20px;
-  }
-
-  .grid-container {
-    margin-top: 5.5%;
+    padding-top: 60px;
   }
 
   .grid-item {
-    margin: 0.5%;
-    width: 49%;
+    width: 48.5%;
   }
 }
 
@@ -329,7 +320,6 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   }
 
   .grid-item {
-    margin: 0.5%;
     width: 32.333%;
   }
 }
