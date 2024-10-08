@@ -1,10 +1,13 @@
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
+
+   20241007
+   edited by Teresa Chow: added "button"
 */
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h5, h6, p, blockquote, button, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -30,6 +33,11 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+}
+button {
+	border: none;
+	outline: none;
+	background-color: inherit;
 }
 ol, ul {
 	list-style: none;

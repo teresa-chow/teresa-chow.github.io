@@ -1,27 +1,67 @@
-body {
-  background-color: #f2f2f2;
-  font-family: "Inknut Antiqua", serif;
-  margin: 5%;
+/* ------------------------ GENERAL ------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-footer {
+body {
+  background-color: #f8f6f5;
+  margin: 2.5%;
+  color: #262721;
+  font-family: "Work Sans", system-ui;
   font-weight: 300;
-  font-size: 0.6em;
-  color: #333;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.name, .menu li {
+  font-size: 0.8em;
+  font-weight: 500;
 }
 
 h2 {
-  font-weight: 600;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1em;
+  line-height: 1.2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+p, li {
+  font-style: normal;
   font-size: 0.8em;
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
 p {
-  font-weight: 300;
-  color: #333;
   line-height: 1.2;
-  margin-bottom: 1.5em;
+}
+
+a, .btn {
+  text-decoration: none;
+  color: #262721;
+}
+
+a:hover, .btn:hover {
+  color: #bab8b3;
+}
+
+a:active, .btn.active {
+  color: #bab8b3;
+}
+
+footer {
+  margin-top: 2.5%;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+footer .social {
+  margin: 0;
+  display: inline-block;
 }
 
 em {
@@ -32,49 +72,235 @@ strong {
   font-weight: 700;
 }
 
-figure {
-  padding-top: 20px;
-  padding-bottom: 20px;
+/* ---------------------- NAVIGATION ---------------------- */
+header {
+  margin: -2.5% -2.5% 0 -2.5%; /* top, right, bottom, left*/
+  padding: 1.5%;
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
 }
 
-.categories {
-  text-align: center;
+header .name, header ul li {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.circle {
-  height: 80px;
-  width: 120px;
+header ul {
+  overflow: hidden;
+}
+
+header li a {
+  display: block;
+}
+
+header .name {
+  display: block;
+  float: left;
+}
+
+/* -- menu -- */
+header nav {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* ------------------------- GRID -------------------------- */
+/*.grid-container {
+  position: relative;
+}*/
+
+.grid-item {
+  height: fit-content;
+  margin: 0.5%;
   border-style: solid;
-  border-width: 2.5px;
-  border-color: #000000;
-  border-radius: 50%;
-  display: inline-block;
-  text-align: center;
-  padding-top: 40px;
+  border-width: 1px;
+  border-color: #262721;
+  /*display: block;*/
+  transition: opacity 0.3s ease;
 }
 
-.circle_major {
-  height: 350px;
-  width: 600px;
-  border-style: dotted;
-  border-width: 2.5px;
-  border-color: #000000;
-  border-radius: 50%;
+/*.grid-item.hide {
+  opacity: 0.15; /* temporary fix
+  pointer-events: none;
+}*/
+
+.grid-item img {
+  position: relative;
+  width: 100%;
+}
+
+.grid-item-text {
+  margin: 3%;
+}
+
+.grid-container .grid-item-text .description {
+  font-weight: 400;
+  color: #bab8b3;
+}
+
+/* ------------------------ FILTERS ----------------------- */
+.filter {
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.filter-arts {
+  color: #d24226;
+}
+
+.filter-design {
+  color: #f2a034;
+}
+
+.filter-it {
+  color: #0d5386;
+}
+
+.filter-workshops {
+  color: #539b55;
+}
+
+/* ---------- MENU BUTTON (MOBILE & TABLET ONLY) ---------- */
+/* -- menu icon -- */
+header .menu-icon {
+  cursor: pointer;
   display: inline-block;
-  text-align: center;
-  padding-top: 250px;
+  float: right;
+  padding-top: 0.8em;
+  position: relative;
+  user-select: none;
+}
+
+header .menu-icon .navicon {
+  background: #262721;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+header .menu-icon .navicon:before,
+header .menu-icon .navicon:after {
+  background: #262721;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* -- menu button -- */
+header .menu-btn {
+  display: none;
+}
+
+header .menu-btn:checked ~ nav {
+  max-height: 400px;
+  opacity: 1;
+  transition: max-height 0.2s ease-out, opacity 0.2s ease-in;
+}
+
+header .menu-btn:checked ~ nav ul li {
+  max-height: 400px;
+  opacity: 1;
+  transition: max-height 0.2s ease-out, opacity 0.2s ease-in;
+}
+
+header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
 }
 
 /* ------------------------ MOBILE ------------------------ */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 480px) {
   .mobile {display: block;}
+  .tablet {display: none;}
   .desktop {display: none;}
-/*TODO*/
+
+  .grid-item {
+    width: 100%;
+  }
+}
+
+/* ------------------------ TABLET ------------------------ */
+@media only screen and (max-width: 768px) {
+  .tablet {display: block;}
+  .mobile {display: none;}
+  .desktop {display: none;}
+
+  .name {
+    padding: 1% 0 1% 0;
+  }
+
+  nav {
+    max-height: 0;
+    opacity: 0;
+  }
+
+  nav li {
+    line-height: 1.5em;
+  }
+
+  main {
+    padding-top: 7.5%;
+  }
+
+  .grid-item {
+    width: 49%;
+  }
 }
 
 /* ------------------------ DESKTOP ------------------------ */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .desktop {display: block;}
+  .tablet {display: none;}
   .mobile {display: none;}
-/*TODO: formatting options*/
+
+  header nav {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  header li {
+    float: left;
+    margin-left: 30px;
+  }
+
+  header .menu-icon {
+    display: none;
+  }
+
+  main {
+    padding-top: 3%;
+  }
+
+  .grid-item {
+    width: 32.333%;
+  }
 }

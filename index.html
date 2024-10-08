@@ -2,38 +2,302 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <link rel="canonical" href="https://www.github.io/teresa-chow" />
+  <link rel="canonical" href="https://www.teresachow.net" />
   <link rel="stylesheet" type="text/css" href="reset.css" />
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/img/favicon.png" type="image/png" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Teresa Chow portfolio | programming, design & visual arts</title>
-  <meta name="description" content="Let's collaborate!">
+  <meta name="keywords" content="teresa chow,teresa chow site,teresa chow portfolio,teresa chow porto,teresa chow artista,teresa chow artist,teresa chow designer,teresa chow fotografia,teresa chow photography,teresa chow video,teresa chow it" />
+  <meta name="description" content="Teresa Chow is a visual artist & motion designer based in Porto, currently diving into project management and programming. In this website one can find some of the work Teresa has been doing over the past few years. Let's collaborate!">
   <meta name="author" content="Teresa Chow">
 </head>
 
 <body>
 <header>
-    <div>
-      <h1>Teresa Chow</h1>
+  <h1 class="name"><a href="index.html">Teresa Chow</a></h1>
+  <input class="menu-btn mobile tablet" type="checkbox" id="menu-btn" />
+  <label class="menu-icon mobile tablet" for="menu-btn"><span class="navicon"></span></label>
+  <nav>
+    <div class="btn-container">
+    <ul class="menu">
+      <!--li><button class="btn active" onclick="filterSelection('all')">All</button></li>
+      <li><button class="btn" onclick="filterSelection('it-projects')">IT Projects</button></li>
+      <li><button class="btn" onclick="filterSelection('design')">Design</button></li>
+      <li><button class="btn" onclick="filterSelection('visual-arts')">Visual Arts</button></li>
+      <li><button class="btn" onclick="filterSelection('workshops')">Workshops</button></li-->
+      <li><a href="index.html">Work</a></li>
+      <li><a href="info.html">Info</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
     </div>
+  </nav>
 </header>
+
 <main>
-    <div>
-      <figure>
-        <img src="assets/img/diagram-3000px.jpg" alt="A diagram with several branches (still image, moving image, objects, design projects, workshops, collaborative projects), each illustrated with pictures of developed projects." width="100%"></img>
-      </figure>
+  <div class="grid-container">
+    <div class="grid-item it-projects" loading="eager">
+      <div class="grid-item-text">
+        <h2>Drone Delivery Platform</h2>
+        <p class="description">Work in progress.</p>
+        <p class="description">Project developed during the Hackathon promoted by Visuinnovation and 42 Porto.</p>
+        <div class="filter filter-it"><p>● IT Projects</p></div>
+      </div>
     </div>
+    <div class="grid-item it-projects" loading="eager">
+      <div class="project-image"><img src="assets/img/it-projects-2024-hackathon-google.jpg"></div>
+      <div class="grid-item-text">
+        <h2>Robô Inteligente de Triagem Automatizada (RITA)</h2>
+        <p class="description">Project developed in the context of Google Cloud Day Lisbon Hackathon: Leveraging AI for Portugal.</p>
+        <div class="filter filter-it"><p>● IT Projects</p></div>
+      </div>
+    </div>
+    <div class="grid-item it-projects" loading="eager">
+      <div class="project-image"><img src="assets/img/it-projects-2024-vicaima-960px.jpg"></div>
+      <div class="grid-item-text">
+        <h2>Performance Dialogue Platform</h2>
+        <p class="description">HR Platform developed in a 3-day period, during the Hackathon promoted by Vicaima and 42 Porto (13 - 16 May 2024).</p>
+        <div class="filter filter-it"><p>● IT Projects</p></div>
+      </div>
+    </div>
+    <div class="grid-item it-projects" loading="eager">
+      <div class="project-image"><img src="assets/img/it-projects-2023-common-core-960px.jpg"></div>
+      <div class="grid-item-text">
+        <h2>42 Porto – Programming</h2>
+        <p class="description">Here you can find some of the programming projects I have developed so far at 42 Porto, as well as other projects I got involved in along the way.</p>
+        <p class="description">42 Porto is part of the global 42 Network, following a peer-to-peer, project-based learning model. This way, its programme encourages students to learn through collaboration, self-directed study, and hands-on projects.</p>
+        <div class="filter filter-it"><p>● IT Projects</p></div>
+      </div>
+    </div>
+    <div class="grid-item workshops" loading="eager">
+      <div class="project-image"><img src="assets/img/workshops-2023-entrelinhas-960px.jpg"></div>
+      <div class="grid-item-text">
+        <h2>Diálogo Fotográfico</h2>
+        <p class="description">Photography workshop aimed at senior students of Universidade Sénior de Ermesinde.</p>
+        <p class="description">The territory of Gandra, in particular its connection with the railroad - broadly associated with the theme of “journeys” - was the motto for the workshop. The resulting photographs were displayed at <em>EntreLinhas – railway festival</em>.</p>
+        <div class="filter filter-workshops"><p>● Workshops</p></div>
+      </div>
+    </div>
+    <div class="grid-item visual-arts" loading="eager">
+      <div class="project-image"><img src="assets/img/visual-arts-2023-zhejiang-porto-960px.jpg"></div>
+      <div class="grid-item-text">
+        <h2>De Zhejiang para o Porto</h2>
+        <p class="description">An exhibition narrating the migration journey of an individual (my grandfather, Chow Horng Tzer 周洪泽) and his family, and his contribute to the Chinese Migrants community in Portugal. The exhibition was held at the Manuel António da Mota Foundation to mark the first anniversary of his passing.</p>
+        <div class="filter filter-arts"><p>● Arts</p></div>
+      </div>
+    </div>
+    <div class="grid-item design" loading="lazy">
+      <div class="project-image"><img src="assets/img/design-2022-dear-doc-sessions-960px.jpg"></div>
+      <div class="grid-item-text">
+        <h2>Dear Doc Sessions</h2>
+        <p class="description">Four illustrations created for the first series of Doc's Kingdom online masterclasses exploring the idea of community. These masterclasses have drawn on the practices of four artistic and cultural organizations, each with distinct histories, scales, and missions, operating in different territories of documentary cinema.</p>
+        <div class="filter filter-design"><p>● Design</p></div>
+      </div>
+    </div>
+
+    <div class="grid-item visual-arts" loading="lazy">
+      <div class="project-image"><img src="assets/img/visual-arts-2022-dong-960px.jpg"></div>
+      <div class="grid-item-text">
+        <h2>东 (dōng)</h2>
+        <p class="description">Short film commissioned by <em>Cineclube Campo Aberto na Brotéria</em>, made using public domain materials (archives: Prelinger Archives, Unsplash, freesound.org), under the subject <em>Journey</em>.</p>
+        <p class="description">Synopsis: Routes extend beyond their starting points and destinations. Here, we focus on the journey itself. For my grandmother Li Dong Shiang 厉东香.</p>
+        <div class="filter filter-arts"><p>● Arts</p></div>
+      </div>
+    </div>
+    <div class="grid-item visual-arts" loading="lazy">
+      <div class="project-image"><img src="assets/img/visual-arts-2022-dias-opacos-dentro-960px.jpg"></div>
+      <div class="grid-item-text">
+        <h2>Dias Opacos</h2>
+        <p class="description">Duo exhibition with David Lopes at Dentro.</p>
+        <div class="filter filter-arts"><p>● Arts</p></div>
+      </div>
+    </div>
+    <div class="grid-item visual-arts" loading="lazy">
+      <div class="project-image"><img src="assets/img/visual-arts-2021-merge-mag-960px.jpg"></div>
+      <div class="grid-item-text">
+        <h2>Visual Essay</h2>
+        <p class="description">An overview of some of the work I developed over the years, including research images and left out work. Published in <em>Merge – The Social Magazine</em> no. 8 (digital issue).</p>
+        <div class="filter filter-arts"><p>● Arts</p></div>
+      </div>
+    </div>
+    <div class="grid-item visual-arts" loading="lazy">
+      <div class="project-image"><img src="assets/img/visual-arts-2020-correspondence-project-960px.jpg"></div>
+      <div class="grid-item-text">
+        <h2>Correspondence</h2>
+        <p class="description">An experimental project born from an image exchange with fellow artist and friend David Lopes. A few flexible guidelines for this visual dialogue were set, much in the manner of playing a game.</p>
+        <div class="filter filter-arts"><p>● Arts</p></div>
+      </div>
+    </div>
+    <div class="grid-item visual-arts" loading="lazy">
+      <div class="project-image"><img src="assets/img/visual-arts-2020-dose-960px.png"></div>
+      <div class="grid-item-text">
+        <h2>Visual Essay</h2>
+        <p class="description">Visual essay on the passage of time, depicting a subtle disruption in a state of stillness and the eventual return to the same state. An exercise of attention, for Dose magazine #4.</p>
+        <div class="filter filter-arts"><p>● Arts</p></div>
+      </div>
+    </div>
+    <div class="grid-item visual-arts" loading="lazy">
+      <div class="project-image"><img src="assets/img/visual-arts-2021-limbo-960px.gif"></div>
+      <div class="grid-item-text">
+        <h2>Limbo</h2>
+        <p class="description">Two animated video works developed for Bienal de Arte Contemporânea da Maia 2021.</p>
+        <p class="description">The period of social confinement associated with the Covid-19 pandemic implied a mobilization for the responsible separation of the body from the Other, often culminating in a choreography of distancing.</p>
+        <div class="filter filter-arts"><p>● Arts</p></div>
+      </div>
+    </div>
+    <div class="grid-item visual-arts" loading="lazy">
+      <div class="project-image"><img src="assets/img/visual-arts-2020-intervalo-960px.gif"></div>
+      <div class="grid-item-text">
+        <h2>Intervalo</h2>
+        <p class="description">Three short digital animation videos thought for being shared on social media. Created by invitation from Dentro for their digital exhibition series <em>CONTER</em> during the Covid-19 lockdown in 2020, this project explores the suspension of in-person gatherings and shared physical spaces for exchange of ideas.</p>
+        <div class="filter filter-arts"><p>● Arts</p></div>
+      </div>
+    </div>
+    <div class="grid-item visual-arts" loading="lazy">
+      <div class="project-image"><img src="assets/img/visual-arts-2020-broteria-revista-960px.jpg"></div>
+      <div class="grid-item-text">
+        <h2>Visual Essay</h2>
+        <p class="description">A photographic series that attempts to preserve the memory of the old headquarters of centenary magazine <em>Brotéria</em>, in particular, the library. Published on the magazine's January 2020 edition.</p>
+        <div class="filter filter-arts"><p>● Arts</p></div>
+      </div>
+    </div>
+    <div class="grid-item visual-arts" loading="lazy">
+      <div class="project-image"><img src="assets/img/visual-arts-2020-broteria-exposicao-960px.jpg"></div>
+      <div class="grid-item-text">
+        <h2>Todas as Coisas: Brotéria 1902—2020</h2>
+        <p class="description"><em>Brotéria</em> is a monthly magazine, published since 1902. Along with its vast library, it relocated to a historical building in Bairro Alto in early 2020. It was a new beginning for the publication, that opened to the city and its participants, inaugurating a cultural center. <em>Todas as Coisas</em> was the center's opening exhibition.</p>
+        <div class="filter filter-arts"><p>● Arts</p></div>
+      </div>
+    </div>
+    <div class="grid-item design" loading="lazy">
+      <div class="project-image"><img src="assets/img/design-2021-notet-the-pull-960px.gif"></div>
+      <div class="grid-item-text">
+        <h2>NOTET – The Pull</h2>
+        <p class="description">Loop cycle animation from original pen drawing for Rotterdam-based contemporary music group NOTET.</p>
+        <div class="filter filter-design"><p>● Design</p></div>
+      </div>
+    </div>
+    <!-- Thorns and Fishbones Natália -->
+    <div class="grid-item visual-arts" loading="lazy">
+      <div class="project-image"><img src="assets/img/visual-arts-2016-empty-space-960px.jpg"></div>
+      <div class="grid-item-text">
+        <h2>[ ]</h2>
+        <p class="description">A photographic series reflecting on media, publicity and attention.</p>
+        <div class="filter filter-arts"><p>● Arts</p></div>
+      </div>
+    </div>
+    <div class="grid-item design" loading="lazy">
+      <div class="project-image"><img src="assets/img/design-2017-skateboard-animation-960px.gif"></div>
+      <div class="grid-item-text">
+        <h2>Skateboarder</h2>
+        <p class="description">Character animation loop.</p>
+        <div class="filter filter-design"><p>● Design</p></div>
+      </div>
+    </div>
+    <div class="grid-item workshops" loading="lazy">
+      <div class="project-image"><img src="assets/img/workshops-2018-street-photography-lab-960px.jpg"></div>
+      <div class="grid-item-text">
+        <h2>street photography.lab</h2>
+        <p class="description">Week-long workshop tailored for teenagers aged 15 to 18, exploring street photography, black-and-white darkroom printing, and the art of self-publishing.</p>
+        <div class="filter filter-workshops"><p>● Workshops</p></div>
+      </div>
+    </div>
+    <div class="grid-item workshops" loading="lazy">
+      <div class="project-image"><img src="assets/img/workshops-2016-fotografia-alternativa-960px.jpg"></div>
+      <div class="grid-item-text">
+        <h2>Fotografia Alternativa</h2>
+        <p class="description">Week-long workshop, designed for teenagers aged 15 to 18, centered on alternative and analog photographic processes.</p>
+        <div class="filter filter-workshops"><p>● Workshops</p></div>
+      </div>
+    </div>
+    <div class="grid-item workshops" loading="lazy">
+      <div class="project-image"><img src="assets/img/workshops-2015-maquinas-desenho-bw-960px.jpg"></div>
+      <div class="grid-item-text">
+        <h2>Máquinas de Desenho</h2>
+        <p class="description">Week-long workshop, aimed at for teenagers aged 15 to 18, focusing on how medium restraints and singularities condition the drawing process.</p>
+        <div class="filter filter-workshops"><p>● Workshops</p></div>
+      </div>
+    </div>
+    <div class="grid-item workshops" loading="lazy">
+      <div class="project-image"><img src="assets/img/workshops-2014-descobrir-desenho-960px.jpg"></div>
+      <div class="grid-item-text">
+        <h2>Descobrir o Desenho</h2>
+        <p class="description">Week-long workshop for teenagers aged 15 to 18 exploring the bodily restraints implied in the drawing process.</p>
+        <div class="filter filter-workshops"><p>● Workshops</p></div>
+      </div>
+    </div>
+    <div class="grid-item visual-arts" loading="lazy">
+      <div class="project-image"><img src="assets/img/visual-arts-2015-untitled-960px.jpg"></div>
+      <div class="grid-item-text">
+        <h2>Untitled</h2>
+        <p class="description">Reflection on intimacy and privacy in the form of an object.</br>(A love letter.)</p>
+        <div class="filter filter-arts"><p>● Arts</p></div>
+      </div>
+    </div>
+  </div>
 </main>
+
 <footer>
-  <p>Website under construction.</p>
-  <p>Copyright <script>document.write(new Date().getFullYear())</script> &copy; Teresa Chow. All rights reserved.</p>
-  <a href="https://www.linkedin.com/in/teresa-chow/" target="_blank" title="LinkedIn">LinkedIn</a>
-  <a href="https://www.github.com/teresa-chow/" target="_blank" title="GitHub">GitHub</a>
-  <a href="https://www.instagram.com/teresachow_" target="_blank" title="Instagram">Instagram</a>
+  <p>A constant work in progress.</br>Copyright <script>document.write(new Date().getFullYear())</script> &copy; Teresa Chow. All rights reserved.</p>
+  <p class="social"><a href="https://www.linkedin.com/in/teresa-chow/" target="_blank" title="LinkedIn">LinkedIn</a></p>
+  <p class="social"><a href="https://www.github.com/teresa-chow/" target="_blank" title="GitHub">GitHub</a></p>
+  <p class="social"><a href="https://www.instagram.com/teresachow_" target="_blank" title="Instagram">Instagram</a></p>
 </footer>
+
+<!--JavaScript-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+<script>
+// Masonry grid initialization, after all images are loaded
+var grid = document.querySelector('.grid-container');
+imagesLoaded(grid, function() {
+var masonry = new Masonry(grid, {
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-item',
+  percentPosition: true
+  });
+});
+
+// Menu filters
+/*function filterSelection(c) {
+  var x = document.getElementsByClassName('grid-item');
+  if (c == 'all') c = '';
+  
+  for (var i = 0; i < x.length; i++) {
+    if (x[i].className.indexOf(c) > -1) {
+      w3RemoveClass(x[i], 'hide');
+    } else {
+      w3AddClass(x[i], 'hide');
+    }
+  }
+};*/
+
+//// Utility function: add class
+/*function w3AddClass(element, name) {
+  if (!element.classList.contains(name)) {
+    element.classList.add(name);
+  }
+}*/
+
+//// Utility function: remove class
+/*function w3RemoveClass(element, name) {
+  element.classList.remove(name);
+}*/
+
+//// Add active class to current button
+/*var btnContainer = document.querySelector('.btn-container');
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}*/
+</script>
 </body>
 </html>
