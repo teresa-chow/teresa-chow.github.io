@@ -236,19 +236,36 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
 
-/* ------------------------ MOBILE ------------------------ */
-@media only screen and (max-width: 480px) {
+/* --------------------- SMALL DEVICES -------------------- */
+@media only screen and (max-width: 768px) {
   .mobile {display: block;}
   .tablet {display: none;}
   .desktop {display: none;}
 
+  .name {
+    padding: 1% 0 1% 0;
+  }
+
+  nav {
+    max-height: 0;
+    opacity: 0;
+  }
+
+  nav li {
+    line-height: 1.5em;
+  }
+
+  main {
+    padding-top: 7.5%;
+  }
+
   .grid-item {
-    width: 100%;
+    width: 99%;
   }
 }
 
-/* ------------------------ TABLET ------------------------ */
-@media only screen and (max-width: 768px) {
+/* --------------------- MEDIUM DEVICES ------------------- */
+@media only screen and (min-width: 769px) and (max-width: 962px) {
   .tablet {display: block;}
   .mobile {display: none;}
   .desktop {display: none;}
@@ -275,8 +292,8 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   }
 }
 
-/* ------------------------ DESKTOP ------------------------ */
-@media only screen and (min-width: 769px) {
+/* --------------------- LARGE DEVICES -------------------- */
+@media only screen and (min-width: 963px) {
   .desktop {display: block;}
   .tablet {display: none;}
   .mobile {display: none;}
