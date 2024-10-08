@@ -168,7 +168,7 @@ header .menu-icon {
   cursor: pointer;
   display: inline-block;
   float: right;
-  padding-top: 0.8em;
+  padding: 1.5em 1em 1.5em 0;
   position: relative;
   user-select: none;
 }
@@ -242,7 +242,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   .desktop {display: none;}
 
   .name {
-    padding: 1% 0 1% 0;
+    padding: 1.5em 0 1.5em 1em;
   }
 
   nav {
@@ -251,11 +251,16 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   }
 
   nav li {
-    line-height: 1.5em;
+    padding-left: 1em;
+    line-height: 3em;
   }
 
   main {
-    padding-top: 7.5%;
+    padding-top: 35px;
+  }
+
+  .grid-container {
+    margin-top: 5.5%;
   }
 
   .grid-item {
@@ -271,7 +276,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   .desktop {display: none;}
 
   .name {
-    padding: 1% 0 1% 0;
+    padding: 1.5em 0 1.5em 1em;
   }
 
   nav {
@@ -280,11 +285,16 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   }
 
   nav li {
-    line-height: 1.5em;
+    padding-left: 1em;
+    line-height: 2em;
   }
 
   main {
-    padding-top: 7.5%;
+    padding-top: 20px;
+  }
+
+  .grid-container {
+    margin-top: 5.5%;
   }
 
   .grid-item {
@@ -315,7 +325,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   }
 
   main {
-    padding-top: 3%;
+    padding-top: 25px;
   }
 
   .grid-item {
