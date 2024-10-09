@@ -108,9 +108,9 @@ header nav {
 }
 
 /* ------------------------- GRID -------------------------- */
-/*.grid-container {
+.grid-container {
   position: relative;
-}*/
+}
 
 .grid-item {
   margin: 5px;
@@ -123,8 +123,7 @@ header nav {
 }
 
 /*.grid-item.hide {
-  opacity: 0.15; /* temporary fix
-  pointer-events: none;
+  display: none;
 }*/
 
 .grid-item img {

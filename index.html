@@ -39,7 +39,7 @@
 
 <main>
   <div class="grid-container">
-    <div class="grid-item it-projects" loading="eager">
+    <div class="grid-item it-projects" id="it-projects" loading="eager">
       <div class="grid-item-text">
         <h2>Drone Delivery Platform</h2>
         <p class="description">Work in progress.</p>
@@ -180,7 +180,6 @@
         <div class="filter filter-design"><p>● Design</p></div>
       </div>
     </div>
-    <!-- Thorns and Fishbones Natália -->
     <div class="grid-item visual-arts" loading="lazy">
       <div class="project-image"><img src="assets/img/visual-arts-2016-empty-space-960px.jpg"></div>
       <div class="grid-item-text">
@@ -262,16 +261,17 @@ var masonry = new Masonry(grid, {
   });
 });
 
+
 // Menu filters
-/*function filterSelection(c) {
-  var x = document.getElementsByClassName('grid-item');
-  if (c == 'all') c = '';
+/*function filterSelection(category) {
+  var filterItems = document.getElementsByClassName('grid-item');
+  if (category == 'all') category = '';
   
-  for (var i = 0; i < x.length; i++) {
-    if (x[i].className.indexOf(c) > -1) {
-      w3RemoveClass(x[i], 'hide');
+  for (var i = 0; i < filterItems.length; i++) {
+    if (filterItems[i].className.indexOf(category) > -1) {
+      w3RemoveClass(filterItems[i], 'hide');
     } else {
-      w3AddClass(x[i], 'hide');
+      w3AddClass(filterItems[i], 'hide');
     }
   }
 };*/
