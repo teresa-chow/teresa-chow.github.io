@@ -49,7 +49,7 @@ a:hover, .btn:hover {
   color: #bab8b3;
 }
 
-a:active, .btn.active {
+a.active, .btn.active {
   color: #bab8b3;
 }
 
